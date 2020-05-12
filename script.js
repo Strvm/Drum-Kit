@@ -263,6 +263,7 @@ const clearKeys = () => {
         item.style.transition = "background-color 100ms linear"
         item.classList.remove('selected');
         item.style.boxShadow = 'none';
+        item.style.filter = null;
     });
     playedSounds = [];
 };
