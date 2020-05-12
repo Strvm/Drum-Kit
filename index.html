@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Drum Kit</title>
+</head>
+<body>
+<nav>
+    <img src="images/Logo-DrumKit.svg" alt="" class="logo">
+    <div class="globalControllers">
+        <div class="button play">PLAY</div>
+        <div class="button stop">STOP</div>
+        <div class="button clear">CLEAR</div>
+        <div><label class="masterVolumeLabel">Master Volume<input type="range" class="masterVolume" min="0" max="2" value="1" step="0.01"></label></div>
+        <label class="bpmInput">BPM: <input type="number" class="bpm" value="80"></label>
+        <div>
+            <ul id="presetMenu">
+                <li>
+                    <a href="#">PRESETS</a>
+                    <ul>
+                        <li><a href="#" class="rockOnePreset">ROCK</a></li>
+                        <li><a href="#" class="rockTwoPreset">ROCK 2</a></li>
+                        <li><a href="#" class="housePreset">HOUSE</a></li>
+                        <li><a href="#" class="hipHopPreset">HIP-HOP</a></li>
+                    </ul>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="soundNames">
+    <h3>Crash</h3>
+    <h3>High Tom</h3>
+    <h3>Medium Tom</h3>
+    <h3>Low Tom</h3>
+    <h3>Open Hi-Hat</h3>
+    <h3>Closed Hi-Hat</h3>
+    <h3>Snare</h3>
+    <h3>Kick</h3>
+</div>
+<div class="kit">
+    <div class="menu">
+        <div class="soundBox">
+            <h1>Click Me!</h1>
+        </div>
+        <h1 class="soundName"></h1>
+        <div class="controllers">
+            <label>Stereo <input type="range"class="stereo" min="-1" max="1" value="0" step="0.01"></label>
+            <label>Volume <input type="range" class="volume" min="0" max="5" value="2.5" step="0.01"></label>
+            <label>Pitch <input type="range" class="pitch" min="0.1" max="10" value="1" step="0.001"></label>
+        </div>
+        <div class="saveButton">BACK</div>
+    </div>
+    <div class="soundContainer">
+        <div class="linePlayer"></div>
+        <!--CRASH-->
+        <div class="mainSound crash">
+            <div class="sound" data-src="./sounds/crash.mp3" data-volume="1.0" data-pitch="1" data-stereo="-1"></div>
+            <div class="sound" data-src="./sounds/crash.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/crash.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/crash.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/crash.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/crash.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/crash.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/crash.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/crash.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/crash.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/crash.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/crash.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/crash.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/crash.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/crash.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/crash.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+        </div>
+        <!--HIGH-TOM-->
+        <div class="mainSound hightom">
+            <div class="sound" data-src="./sounds/hightom.mp3" data-volume="1.0" data-pitch="1" data-stereo="-1"></div>
+            <div class="sound" data-src="./sounds/hightom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/hightom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/hightom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/hightom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/hightom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/hightom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/hightom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/hightom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/hightom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/hightom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/hightom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/hightom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/hightom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/hightom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/hightom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+        </div>
+        <!--MEDIUM-TOM-->
+        <div class="mainSound mediumtom">
+            <div class="sound" data-src="./sounds/mediumtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="-1"></div>
+            <div class="sound" data-src="./sounds/mediumtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/mediumtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/mediumtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/mediumtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/mediumtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/mediumtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/mediumtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/mediumtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/mediumtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/mediumtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/mediumtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/mediumtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/mediumtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/mediumtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/mediumtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+        </div>
+        <!--LOW-TOM-->
+        <div class="mainSound lowtom">
+            <div class="sound" data-src="./sounds/lowtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="-1"></div>
+            <div class="sound" data-src="./sounds/lowtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/lowtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/lowtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/lowtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/lowtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/lowtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/lowtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/lowtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/lowtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/lowtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/lowtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/lowtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/lowtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/lowtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/lowtom.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+        </div>
+        <!--OPEN HI-HAT-->
+        <div class="mainSound openhihat">
+            <div class="sound" data-src="./sounds/openhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="-1"></div>
+            <div class="sound" data-src="./sounds/openhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/openhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/openhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/openhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/openhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/openhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/openhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/openhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/openhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/openhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/openhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/openhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/openhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/openhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/openhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+        </div>
+        <!--CLOSED HI-HAT-->
+        <div class="mainSound closedhihat">
+            <div class="sound" data-src="./sounds/closedhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="-1"></div>
+            <div class="sound" data-src="./sounds/closedhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/closedhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/closedhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/closedhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/closedhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/closedhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/closedhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/closedhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/closedhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/closedhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/closedhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/closedhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/closedhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/closedhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/closedhihat.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+        </div>
+        <!--SNARE-->
+        <div class="mainSound snare">
+            <div class="sound" data-src="./sounds/snare.mp3" data-volume="1.0" data-pitch="1" data-stereo="-1"></div>
+            <div class="sound" data-src="./sounds/snare.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/snare.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/snare.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/snare.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/snare.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/snare.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/snare.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/snare.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/snare.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/snare.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/snare.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/snare.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/snare.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/snare.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/snare.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+        </div>
+        <!--KICK-->
+        <div class="mainSound kick">
+            <div class="sound" data-src="./sounds/kick.mp3" data-volume="1.0" data-pitch="1" data-stereo="-1"></div>
+            <div class="sound" data-src="./sounds/kick.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/kick.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/kick.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/kick.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/kick.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/kick.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/kick.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/kick.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/kick.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/kick.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/kick.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/kick.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/kick.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/kick.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+            <div class="sound" data-src="./sounds/kick.mp3" data-volume="1.0" data-pitch="1" data-stereo="0"></div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
