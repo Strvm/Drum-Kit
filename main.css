@@ -69,6 +69,9 @@ body, html{
     display: inline-block;
     overflow: hidden;
 }
+.sound:hover{
+    filter: brightness(180%);
+}
 .soundContainer{
     width: 99.1%;
     height: 100%;
