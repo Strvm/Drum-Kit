@@ -387,7 +387,7 @@ const removeItemAll = (array, value) => {
         if (target.className === 'dots') {
             const sound = target.parentElement;
             selectedSound = sound;
-            const name = sound.parentElement.className;
+            const name = sound.parentElement.className.replace('mainSound ', '');
             volumeController.value = sound.getAttribute('data-stereo');
             volumeController.value = sound.getAttribute('data-volume');
             pitchController.value = sound.getAttribute('data-pitch');
